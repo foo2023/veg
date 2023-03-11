@@ -39,7 +39,7 @@
     font-family: 'Roboto', 'Noto Sans SC', sans-serif;
 }
 .menu-1-subtitle {
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
     color: #000000;
 }
@@ -48,6 +48,20 @@
 .menu-image {
     height: 60%;
     background-position: left;
+}
+.menu-1-container {
+    justify-self: center;
+    background-color: #ffffffb1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 3rem;
+    padding: 2rem 2rem;
+}
+.menu-1-title {
+    font-size: 4.5rem;
+}
+.menu-1-subtitle {
+    font-size: 2.5rem;
 }
 
 @media (orientation: landscape) {
