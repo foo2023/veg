@@ -51,7 +51,7 @@ const mobileMenu = document.getElementById("mobileMenu")
 const mobileAbout = document.getElementById("mobileAbout")
 const mobileDownload = document.getElementById("mobileDownload")
 
-if (page === "home.html") {
+if (page === "home") {
     mobileHome.style.display = "none";
     mobileMenu.style.display = "flex";
     mobileAbout.style.display = "flex";
@@ -62,7 +62,7 @@ if (page === "home.html") {
     } 
 
 }
-if (page === "menu.html") {
+if (page === "menu") {
     mobileHome.style.display = "flex";
     mobileMenu.style.display = "none";
     mobileAbout.style.display = "flex";
