@@ -2,7 +2,7 @@ navHeader.innerHTML = `
 <nav class="navbar" id="signalNav">
 <input type="checkbox" id="check">
 <label for="check" class="checkbtn" id="checkbtn">
-<a onclick="myfc(this); changePosition(); stopNavheaderScrollDown();">
+<a onclick="myfc(this); changePosition(); stopNavheaderScrollDown();" class="checkbtn-a">
 <div  class="navm">
 <div class="bar1"></div>
 <div class="bar2"></div>
