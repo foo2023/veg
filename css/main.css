@@ -1,6 +1,14 @@
 :root{
     font-size: 62.5%;
 }
+label,
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
 *{
 padding: 0;
 margin: 0;
@@ -329,12 +337,12 @@ justify-self: center;
 }
 @media (max-width: 980px){
 nav{
-height: 7rem;
+height: 6rem;
 justify-content: space-evenly;
 }
 label.logo{
 width: max-content;
-font-size: 6rem;
+font-size: 5rem;
 margin-left: 0;
 position: static;
 order: -2;
@@ -343,13 +351,11 @@ order: -2;
     display: none;
 }
 .checkbtn{
-    display: block;
+    display: flex;
     z-index: 2000;
-    width: 42px;
     position: static;
     order: 2;
 }
-
 
 .image {
 height: 75%;
@@ -377,14 +383,21 @@ height: 75%;
     margin: 8rem;
 }
 .seperate li a{
-    font-size: 12vw;
-    padding: 2rem 4rem;
-    border-radius: 1.4rem;
+    font-size: 4rem;
     color: rgb(0, 0, 0);
+    transition: 0.01s;
+}
+.seperate li:hover{
+    background-color: #ffffff00;
+    color: #ffffff00;
+}
+.seperate li a:hover{
+    border-bottom: 5px solid rgb(0, 65, 8);
+    background-color: #ffffff00;
 }
     nav ul li .active{
-    font-size: 7vw;
-    padding: 0.4rem 0.6rem;
+    font-size: 6vw;
+    padding: 0.3rem 0.6rem;
     border-radius: .6vw;
     border-style: solid;
     border-color: #ffffff;
@@ -404,10 +417,6 @@ nav ul li{
 display: inline-flex;
 flex: 1;
 }
-.seperate li a:hover{
-    background-color: rgba(99, 254, 22, 0.573);
-
-}
 .icon-menu {
     height: 100%;
     order: 3;
@@ -417,25 +426,33 @@ flex: 1;
     left: -1;
 }
 .bar1, .bar2, .bar3 {
-width: 42px;
-height: 6.3px;
+width: 30px;
+height: 4.5px;
 border-radius: 4.5px;
 background-color: #000000;
 transition: 0.3s; 
 }
 .navm {
     display: grid;
-    gap: 8.4px;
+    gap: 6px;
+    height: 25.5px;
 }
 
+a.active:hover{
+    background-color: rgb(3, 138, 19);
+    color: #ffffff;
+    }
+    .checkbtn-a:hover {
+        background-color: rgba(3, 138, 19, 0);
+    }
 .iconchange .bar1 {
-transform: translate(0, 14.735px) rotate(-45deg);
+transform: translate(0, 10.525px) rotate(-45deg);
 }
 
 .iconchange .bar2 {opacity: 0;}
 
 .iconchange .bar3 {
-transform: translate(0, -14.735px) rotate(45deg);
+transform: translate(0, -10.525px) rotate(45deg);
 }
 
 .btnlanguage-element-grid {
@@ -458,11 +475,11 @@ top: 16rem;
 }
 
 .t1{
-font-size: 4rem;
+font-size: 5rem;
 color: rgb(0, 0, 0);
 }
 .grid-between-btnlanguage-home-1 {
-    gap: 4rem;
+    gap: 2rem;
 }
 .home-1 {
 height: fit-content;
@@ -473,6 +490,14 @@ margin-right: 1rem;
 padding: 2rem 2rem;
 border-radius: 1rem;
 }
+.home-3-arrange {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: grid;
+    gap: 1rem;
+    }
 .home-1-p1{
 font-size: 2.5rem;
 color: #000000;
@@ -480,6 +505,9 @@ color: #000000;
 .home-2{
 display: block;
 }
+.home-2-title {
+    font-size: 4.5rem;
+    }
 .home-2-p2 {
 font-size: 7rem;
 font-weight: 100;
@@ -495,28 +523,29 @@ font-family: 'Noto Sans SC', sans-serif;
     justify-content: center;
     }
 .home-3-title {
-font-size: 8rem;
+font-size: 4.5rem;
 }
 .home-3-1 {
-font-size: 5rem;
+font-size: 2.5rem;
 }
 
 .home-3-image {
-    height: 30rem;
+    height: 18rem;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 40rem;
+    width: 24rem;
     grid-area: home-3-image;
     justify-self: center;
     }
 .home-3-p {
     margin: 0;
     grid-area: home-3-p;
+    gap: 1.5rem;
     }
 .home-3-item {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30rem 1fr;
+    grid-template-rows: 19.3rem 1fr;
     justify-content: center;
     align-items: center;
     grid-template-areas: 
@@ -526,7 +555,7 @@ font-size: 5rem;
     .home-3-container {
         border-radius: 3rem;
         margin-bottom: 10rem;
-        width: 95%;
+        width: 97%;
         }
 
 
@@ -546,6 +575,7 @@ position: static;
 display: flex;
 flex-direction: row;
 align-items: center;
+width: auto;
 }
 nav ul li{
 display: block;
@@ -569,8 +599,8 @@ nav ul li .active{
 color: rgb(0, 0, 0);
 font-size: 2.5rem;
 text-transform: uppercase;
-padding: .3vw 1vw;
-border-radius: .4vw;
+padding: 0.4rem 1rem;
+border-radius: 1rem;
 position: static;
 } 
 .checkbtn{
