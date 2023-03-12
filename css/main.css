@@ -599,6 +599,7 @@ background: rgb(139, 193, 113);
 transition: 0.3s;
 border-color: #92d17b;
 color: #ffffff;
+transition: 0.1s;
 }
 nav ul li .active{
 color: rgb(0, 0, 0);
