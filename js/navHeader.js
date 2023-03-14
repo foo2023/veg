@@ -51,7 +51,7 @@ const mobileMenu = document.getElementById("mobileMenu")
 const mobileAbout = document.getElementById("mobileAbout")
 const mobileDownload = document.getElementById("mobileDownload")
 
-if (page === "home") {
+if (page === "") {
     mobileHome.style.display = "none";
     mobileMenu.style.display = "flex";
     mobileAbout.style.display = "flex";
