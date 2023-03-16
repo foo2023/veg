@@ -12,8 +12,8 @@ navHeader.innerHTML = `
 </label>
 <label class="logo">Practice</label>
 <ul>
-<li><a class="active nav-btn-font" href="index.html" id="home">HOME</a></li>
-<li><a href="menu.html" class="hide nav-btn-font" id="menu">MENU</a></li>
+<li id="home"><a class="active nav-btn-font" href="index.html" id="home">HOME</a></li>
+<li id="menu"><a href="menu.html" class="hide nav-btn-font" id="menu">MENU</a></li>
 <li><a href="#" class="hide nav-btn-font" id="about">ABOUT</a></li>
 <li><a href="#" class="hide nav-btn-font" id="download">DOWNLOAD</a></li>
 </ul>
