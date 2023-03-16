@@ -335,14 +335,125 @@ margin-bottom: 10rem;
 justify-self: center;
 }
 }
-@media (max-width: 980px){
+
+@media (min-width: 590px) and (max-width: 990px){
+nav{
+    height: 5rem;
+    justify-content: space-evenly;
+}
+label.logo{
+    font-size:5rem;
+    position: static;
+    width: max-content;
+    margin-left: 0;
+    }
+.hide{
+    display: block;
+}
+.seperate{
+display: none;
+}
+nav ul{
+position: static;
+display: flex;
+flex-direction: row;
+align-items: center;
+width: auto;
+}
+nav ul li{
+display: block;
+}
+nav ul li a{
+color: rgb(0, 0, 0);
+font-size: 2rem;
+text-transform: uppercase;
+padding: .11rem .5rem;
+border-radius: .6rem;
+}
+a.active,a:hover{
+background: rgb(228, 255, 214);
+color: #ffffff;
+border-color: #b9d7af;
+color: #ffffff;
+}
+a:hover{
+background: rgb(139, 193, 113);
+transition: 0.3s;
+border-color: #92d17b;
+color: #ffffff;
+transition: 0.1s;
+}
+nav ul li .active{
+color: rgb(0, 0, 0);
+font-size: 2.5rem;
+text-transform: uppercase;
+padding: 0.3rem .7rem;
+border-radius: 1rem;
+position: static;
+} 
+
+
+
+.checkbtn{
+display: none;
+}
+
+.image{
+height: 140%;
+}
+.btnlanguage{
+font-size: 2.5rem;
+color: rgb(255, 255, 255);
+padding: 1.3rem 2.5rem;
+border-radius: 2rem;
+}
+.t1{
+font-size: 5rem;
+color: rgb(0, 0, 0);
+}
+.btnlanguage-element-grid {
+    display: grid;
+    width: 100%;
+    height: 18rem;
+    grid-template-columns: 1fr 30rem 10rem;
+    grid-template-rows: 1fr 9rem;
+    grid-template-areas: 
+    "left-btnlanguage left-btnlanguage left-btnlanguage"
+    ". position-btnlanguage right-btnlanguage";
+    }
+.grid-between-btnlanguage-home-1 {
+    gap: 1rem;
+}
+.home-1-box{
+padding: 3rem 3rem;
+border-radius: 2rem;
+}
+.home-1-p1{
+font-size: 3rem;
+color: #000000;
+}
+.home-2{
+display: block;
+}
+.home-2-title {
+    font-size: 4rem;
+    }
+.home-3-title {
+font-size: 4rem;
+}
+.home-3-1 {
+font-size: 2.5rem;
+}
+}
+
+@media (max-width: 591px){
 nav{
 height: 5.5rem;
 justify-content: space-evenly;
 }
 label.logo{
 width: max-content;
-font-size: 4.8rem;
+font-size: 4.2rem;
 margin-left: 0;
 position: static;
 order: -2;
@@ -396,7 +507,7 @@ height: 75%;
     background-color: #ffffff00;
 }
     nav ul li .active{
-    font-size: 6vw;
+    font-size: 2rem;
     padding: 0.3rem 0.6rem;
     border-radius: 1rem;
     border-style: solid;
@@ -413,7 +524,7 @@ a.active:hover{
 nav ul {
     position: static;
     order: -1;
-    width: 100px;
+    width: max-content;
     display: flex;
     align-items: center;
 }
@@ -560,7 +671,7 @@ font-size: 2.5rem;
         }
 
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
 nav{
     height: 5rem;
     justify-content: space-evenly;
@@ -668,5 +779,5 @@ font-size: 4rem;
 font-size: 2.5rem;
 }
 
-}
+} */
 }
