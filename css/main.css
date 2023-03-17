@@ -119,7 +119,7 @@ display: grid;
 width: 100%;
 height: 25rem;
 grid-template-columns: 1fr 30rem 10rem;
-grid-template-rows: 1fr 10rem;
+grid-template-rows: 1fr 15rem;
 grid-template-areas: 
 "left-btnlanguage left-btnlanguage left-btnlanguage"
 ". position-btnlanguage right-btnlanguage";
@@ -176,7 +176,7 @@ display: none;
     grid-area: position-btnlanguage;
 }
 .btnlanguage{
-font-size: 4rem;
+font-size: 3.5rem;
 background-color: rgb(37, 112, 0);
 color: rgb(255, 255, 255);
 padding: 1rem 2rem;
@@ -280,7 +280,7 @@ background-image: url("../images/earth.png");
     background-image: url("../images/economical.png");
 }
 .home-3-image {
-    height: 30rem;
+height: 30rem;
 background-repeat: no-repeat;
 background-size: 100%;
 width: 40rem;
@@ -297,36 +297,7 @@ justify-content: center;
 align-items: center;
 gap: 1rem;
 }
-/*@media (max-width: 952px){
-nav{
-height: 6vw;
-}
-label.logo{
-font-size: 4vw;
-line-height: 6vw;
-}
-nav ul li{
-line-height: 6vw;
-}
 
-}
-@media (max-width: 858px){
-nav{
-height: 9vw;
-}
-label.logo{
-font-size: 8vw;
-line-height: 9vw;
-}
-nav ul li{
-line-height: 9vw;
-}
-nav ul li a{
-font-size: 1.8vw;
-padding: .3vw 1vw;
-border-radius: .4vw;
-}
-}*/
 @media (max-width: 1300px) {
 .home-3-container {
 background-color: #ffffff;
@@ -392,8 +363,6 @@ border-radius: 1rem;
 position: static;
 } 
 
-
-
 .checkbtn{
 display: none;
 }
@@ -414,9 +383,9 @@ color: rgb(0, 0, 0);
 .btnlanguage-element-grid {
     display: grid;
     width: 100%;
-    height: 18rem;
-    grid-template-columns: 1fr 30rem 10rem;
-    grid-template-rows: 1fr 9rem;
+    height: 14rem;
+    grid-template-columns: 1.5fr 25rem 0.3fr;
+    grid-template-rows: 1fr 7rem;
     grid-template-areas: 
     "left-btnlanguage left-btnlanguage left-btnlanguage"
     ". position-btnlanguage right-btnlanguage";
@@ -444,6 +413,18 @@ font-size: 4rem;
 .home-3-1 {
 font-size: 2.5rem;
 }
+.home-3-item {
+    grid-template-columns: 25rem 1fr;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    }
+
+.home-3-image {
+    height: 18rem;
+    width: 24rem;
+    }
 }
 
 @media (max-width: 591px){
@@ -571,7 +552,7 @@ transform: translate(0, -10.525px) rotate(45deg);
 display: grid;
 width: 100%;
 height: 16rem;
-grid-template-columns: 1fr 13.2rem 2rem;
+grid-template-columns: 1fr 13.2rem 0.2fr;
 grid-template-rows: 1fr 7rem;
 grid-template-areas: 
 "left-btnlanguage left-btnlanguage left-btnlanguage"
@@ -669,115 +650,4 @@ font-size: 2.5rem;
         margin-bottom: 10rem;
         width: 97%;
         }
-
-
-/* @media (orientation: landscape) {
-nav{
-    height: 5rem;
-    justify-content: space-evenly;
-}
-label.logo{
-    font-size:5rem;
-    position: static;
-    width: max-content;
-    }
-.hide{
-    display: block;
-}
-.seperate{
-display: none;
-}
-nav ul{
-position: static;
-display: flex;
-flex-direction: row;
-align-items: center;
-width: auto;
-}
-nav ul li{
-display: block;
-}
-nav ul li a{
-color: rgb(0, 0, 0);
-font-size: 2rem;
-text-transform: uppercase;
-padding: .11rem .5rem;
-border-radius: .6rem;
-}
-a.active,a:hover{
-background: rgb(228, 255, 214);
-color: #ffffff;
-border-color: #b9d7af;
-color: #ffffff;
-}
-a:hover{
-background: rgb(139, 193, 113);
-transition: 0.3s;
-border-color: #92d17b;
-color: #ffffff;
-transition: 0.1s;
-}
-nav ul li .active{
-color: rgb(0, 0, 0);
-font-size: 2.5rem;
-text-transform: uppercase;
-padding: 0.3rem .7rem;
-border-radius: 1rem;
-position: static;
-} 
-
-
-
-.checkbtn{
-display: none;
-}
-
-.image{
-height: 140%;
-}
-.btnlanguage{
-font-size: 2.5rem;
-color: rgb(255, 255, 255);
-padding: 1.3rem 2.5rem;
-border-radius: 2rem;
-}
-.t1{
-font-size: 5rem;
-color: rgb(0, 0, 0);
-}
-.btnlanguage-element-grid {
-    display: grid;
-    width: 100%;
-    height: 18rem;
-    grid-template-columns: 1fr 30rem 10rem;
-    grid-template-rows: 1fr 9rem;
-    grid-template-areas: 
-    "left-btnlanguage left-btnlanguage left-btnlanguage"
-    ". position-btnlanguage right-btnlanguage";
-    }
-.grid-between-btnlanguage-home-1 {
-    gap: 1rem;
-}
-.home-1-box{
-padding: 3rem 3rem;
-border-radius: 2rem;
-}
-.home-1-p1{
-font-size: 3rem;
-color: #000000;
-}
-.home-2{
-display: block;
-}
-.home-2-title {
-    font-size: 4rem;
-    }
-.home-3-title {
-font-size: 4rem;
-}
-.home-3-1 {
-font-size: 2.5rem;
-}
-
-} */
 }
