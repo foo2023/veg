@@ -10,7 +10,7 @@ navHeader.innerHTML = `
 </div>
           </a>
 </label>
-<label class="logo">Practice</label>
+<label class="logo">Vegshare</label>
 <ul>
 <li><a class="active nav-btn-font" href="index.html" id="home">HOME</a></li>
 <li><a href="menu.html" class="hide nav-btn-font" id="menu">MENU</a></li>
