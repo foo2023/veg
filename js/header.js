@@ -17,14 +17,14 @@ navHeader.innerHTML = `
 <li><a href="#" class="hide nav-btn-font" id="about">ABOUT</a></li>
 <li><a href="#" class="hide nav-btn-font" id="download">DOWNLOAD</a></li>
 </ul>
-<ul class="seperate">
 <div class="seperate-container">
+<ul class="seperate">
 <li  id="mobileHome"><a href="index.html" class="nav-btn-font">HOME</a></li>
 <li  id="mobileMenu"><a href="menu.html" class="nav-btn-font">MENU</a></li>
 <li  id="mobileAbout"><a href="#" class="nav-btn-font">ABOUT</a></li>
 <li  id="mobileDownload"><a href="#" class="nav-btn-font">DOWNLOAD</a></li>
-</div>
 </ul>
+</div>
 </nav> `
 ;
 
