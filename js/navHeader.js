@@ -66,7 +66,12 @@ if (window.matchMedia("(max-width: 591px)").matches) {
     noneMobileMenu.style.display = "none";
     noneMobileAbout.style.display = "none";
     noneMobileDownload.style.display = "none";
-} else
+} else {
+    noneMobileHome.style.display = "flex";
+    noneMobileMenu.style.display = "flex";
+    noneMobileAbout.style.display = "flex";
+    noneMobileDownload.style.display = "flex";
+}
     if (home.classList.contains("hide")) {
         home.classList.remove("hide");
         home.classList.add("active");
