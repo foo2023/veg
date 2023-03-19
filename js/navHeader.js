@@ -54,16 +54,19 @@ const noneMobileHome = document.getElementById("noneMobileHome")
 const noneMobileMenu = document.getElementById("noneMobileMenu")
 const noneMobileAbout = document.getElementById("noneMobileAbout")
 const noneMobileDownload = document.getElementById("noneMobileDownload")
+const checkbtn = document.getElementById("checkbtn")
 
 if (page === "") {
     mobileHome.style.display = "none";
     mobileMenu.style.display = "flex";
     mobileAbout.style.display = "flex";
     mobileDownload.style.display = "flex";
+if (checkbtn.style.display = "flex") {
     noneMobileHome.style.display = "inline-flex";
     noneMobileMenu.style.display = "none";
     noneMobileAbout.style.display = "none";
     noneMobileDownload.style.display = "none";
+}
     if (home.classList.contains("hide")) {
         home.classList.remove("hide");
         home.classList.add("active");
