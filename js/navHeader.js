@@ -66,7 +66,7 @@ if (checkbtn.style.display = "flex") {
     noneMobileMenu.style.display = "none";
     noneMobileAbout.style.display = "none";
     noneMobileDownload.style.display = "none";
-}
+} else
     if (home.classList.contains("hide")) {
         home.classList.remove("hide");
         home.classList.add("active");
