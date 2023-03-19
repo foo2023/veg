@@ -54,7 +54,7 @@ const noneMobileHome = document.getElementById("noneMobileHome")
 const noneMobileMenu = document.getElementById("noneMobileMenu")
 const noneMobileAbout = document.getElementById("noneMobileAbout")
 const noneMobileDownload = document.getElementById("noneMobileDownload")
-const checkbtn = document.getElementById("checkbtn")
+
 
 if (page === "") {
     mobileHome.style.display = "none";
