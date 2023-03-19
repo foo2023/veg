@@ -19,7 +19,7 @@ font-family: montserrat;
 }
 nav{
 background: rgb(183, 255, 147);
-height: 5vw;
+height: 8rem;
 width: 100%;
 align-items: center;
 display: flex;
@@ -56,14 +56,14 @@ order: 2;
 }
 nav ul li{
 display: inline-block;
-margin: 0.7vw;
+margin: 1rem;
 }
 nav ul li a{
 color: rgb(0, 0, 0);
-font-size: 1.5vw;
+font-size: 2.3rem;
 text-transform: uppercase;
-padding: .3vw 1vw;
-border-radius: .4vw;
+padding: .5rem 1.4rem;
+border-radius: .6rem;
 }
 .mobileHome {
     display: block;
@@ -83,7 +83,7 @@ background-color: rgb(0, 199, 0);
 transition: 0.3s;
 }
 .checkbtn{
-font-size: 8vw;
+font-size: 10rem;
 color: rgb(224, 253, 253);
 position: static;
 cursor: pointer;
@@ -97,7 +97,7 @@ display: none;
 display: none;
 }
 .image {
-height: 100%;
+padding-bottom: 26rem; 
 background: url("../images/DSC03379.png");
 background-repeat: no-repeat;
 background-position: center;
@@ -138,6 +138,7 @@ grid-template-areas:
 .home-1 {
 height: fit-content;
 display: flex;
+justify-content: center;
 }
 .home-1-box{
 width: fit-content;
@@ -146,18 +147,12 @@ background-color: rgba(255, 255, 255, 0.418);
 border-radius: 1rem;
 display: block;
 }
-.home-1-box-left {
-flex: 1;
-}
-.home-1-box-right {
-flex: 2;
-}
 .home-2{
 display: block;
 width: 100%;
 }
 .home-1-p1{
-font-size: 5rem;
+font-size: 4.5rem;
 color: #000000;
 font-weight: 500;
 font-style: italic;
@@ -368,7 +363,7 @@ display: none;
 }
 
 .image{
-height: 140%;
+padding-bottom: 8rem; 
 }
 .btnlanguage{
 font-size: 2.5rem;
@@ -450,7 +445,7 @@ order: -2;
 }
 
 .image {
-height: 75%;
+padding-bottom: 20rem; 
 }
 .seperate {
     width: 100%;
