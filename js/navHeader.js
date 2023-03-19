@@ -61,12 +61,12 @@ if (page === "") {
     mobileMenu.style.display = "flex";
     mobileAbout.style.display = "flex";
     mobileDownload.style.display = "flex";
-if (checkbtn.style.display = "flex") {
+if (window.matchMedia("(max-width: 591px)").matches) {
     noneMobileHome.style.display = "inline-flex";
     noneMobileMenu.style.display = "none";
     noneMobileAbout.style.display = "none";
     noneMobileDownload.style.display = "none";
-} else
+} 
     if (home.classList.contains("hide")) {
         home.classList.remove("hide");
         home.classList.add("active");
