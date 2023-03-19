@@ -12,10 +12,10 @@ navHeader.innerHTML = `
 </label>
 <label class="logo">Vegshare</label>
 <ul>
-<li><a class="active nav-btn-font" href="index.html" id="home">HOME</a></li>
-<li><a href="menu.html" class="hide nav-btn-font" id="menu">MENU</a></li>
-<li><a href="#" class="hide nav-btn-font" id="about">ABOUT</a></li>
-<li><a href="#" class="hide nav-btn-font" id="download">DOWNLOAD</a></li>
+<li id="noneMobileHome"><a class="active nav-btn-font" href="index.html" id="home">HOME</a></li>
+<li id="noneMobileMenu"><a href="menu.html" class="hide nav-btn-font" id="menu">MENU</a></li>
+<li id="noneMobileAbout"><a href="#" class="hide nav-btn-font" id="about">ABOUT</a></li>
+<li id="noneMobileDownload"><a href="#" class="hide nav-btn-font" id="download">DOWNLOAD</a></li>
 </ul>
 <ul class="seperate">
 <div class="seperate-container">
