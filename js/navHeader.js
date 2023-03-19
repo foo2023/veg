@@ -50,12 +50,20 @@ const mobileHome = document.getElementById("mobileHome")
 const mobileMenu = document.getElementById("mobileMenu")
 const mobileAbout = document.getElementById("mobileAbout")
 const mobileDownload = document.getElementById("mobileDownload")
+const noneMobileHome = document.getElementById("noneMobileHome")
+const noneMobileMenu = document.getElementById("noneMobileMenu")
+const noneMobileAbout = document.getElementById("noneMobileAbout")
+const noneMobileDownload = document.getElementById("noneMobileDownload")
 
 if (page === "") {
     mobileHome.style.display = "none";
     mobileMenu.style.display = "flex";
     mobileAbout.style.display = "flex";
     mobileDownload.style.display = "flex";
+    noneMobileHome.style.display = "inline-flex";
+    noneMobileMenu.style.display = "none";
+    noneMobileAbout.style.display = "none";
+    noneMobileDownload.style.display = "none";
     if (home.classList.contains("hide")) {
         home.classList.remove("hide");
         home.classList.add("active");
