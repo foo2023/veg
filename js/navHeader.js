@@ -97,7 +97,23 @@ if (page === "") {
     noneMobileAbout.style.display = "flex";
     noneMobileDownload.style.display = "flex";
   }
-}}
+}
+
+if (page === "menu") {
+  if (e.matches) {
+    noneMobileHome.style.display = "none";
+    noneMobileMenu.style.display = "inline-flex";
+    noneMobileAbout.style.display = "none";
+    noneMobileDownload.style.display = "none";
+  } else {
+    noneMobileHome.style.display = "flex";
+    noneMobileMenu.style.display = "flex";
+    noneMobileAbout.style.display = "flex";
+    noneMobileDownload.style.display = "flex";
+  }
+}
+
+}
 
 mediaQuery.addListener(handleMediaQueryChange);
 handleMediaQueryChange(mediaQuery);
