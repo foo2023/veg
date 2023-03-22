@@ -3,7 +3,11 @@
     gap: 100rem;
 }
 .menu-image {
+<<<<<<< HEAD
     padding-bottom: 30rem;
+=======
+    padding-bottom: 20rem;
+>>>>>>> bb652aa6aa4fa3d2c7a9d40504385105352315ae
     background-image: url("../images/menu-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -77,4 +81,9 @@
     .menu-1-subtitle {
         font-size: 2.5rem;
     }
+<<<<<<< HEAD
 }
+=======
+}
+}
+>>>>>>> bb652aa6aa4fa3d2c7a9d40504385105352315ae
