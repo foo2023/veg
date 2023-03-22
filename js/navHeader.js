@@ -67,6 +67,7 @@ if (page === "") {
         home.classList.add("active");
     } 
 
+    
 }
 if (page === "menu") {
     mobileHome.style.display = "flex";
