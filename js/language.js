@@ -23,4 +23,5 @@ if (language === "mandarin") {
   english.style.display = "block";
   localStorage.setItem("language", "english"); // Save language preference
 }
+
 }
