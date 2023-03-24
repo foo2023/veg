@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .grid-page {
     display: grid;
     gap: 110rem;
@@ -5,4 +6,13 @@
 
 .table1 {
 
+=======
+.grid-page {
+    display: grid;
+    gap: 110rem;
+}
+
+.table1 {
+
+>>>>>>> 2bb12b75af21a886ae8bb29b8a27429c5b21a2cc
 }
