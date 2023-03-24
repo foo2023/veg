@@ -93,10 +93,10 @@ if (page === "") {
     noneMobileAbout.style.display = "none";
     noneMobileDownload.style.display = "none";
   } else {
-    noneMobileHome.style.display = "flex";
-    noneMobileMenu.style.display = "flex";
-    noneMobileAbout.style.display = "flex";
-    noneMobileDownload.style.display = "flex";
+    noneMobileHome.style.display = "inline-flex";
+    noneMobileMenu.style.display = "inline-flex";
+    noneMobileAbout.style.display = "inline-flex";
+    noneMobileDownload.style.display = "inline-flex";
   }
 }
 
@@ -107,10 +107,10 @@ if (page === "menu") {
     noneMobileAbout.style.display = "none";
     noneMobileDownload.style.display = "none";
   } else {
-    noneMobileHome.style.display = "flex";
-    noneMobileMenu.style.display = "flex";
-    noneMobileAbout.style.display = "flex";
-    noneMobileDownload.style.display = "flex";
+    noneMobileHome.style.display = "inline-flex";
+    noneMobileMenu.style.display = "inline-flex";
+    noneMobileAbout.style.display = "inline-flex";
+    noneMobileDownload.style.display = "inline-flex";
   }
 }
 
