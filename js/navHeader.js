@@ -116,5 +116,5 @@ if (page === "menu") {
 
 }
 
-mediaQuery.addListener(handleMediaQueryChange);
-handleMediaQueryChange(mediaQuery);
+mediaQuery.addEventListener('change', handleMediaQueryChange);
+handleMediaQueryChange(mediaQuery.matches);
