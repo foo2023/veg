@@ -1,0 +1,81 @@
+.grid-between-item {
+    display: grid;
+    gap: 100rem;
+}
+.menu-image {
+    padding-bottom: 30rem;
+    background-image: url("../images/menu-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-1 {
+    justify-content: center;
+}
+.menu-title-mandarin {
+    font-family:'ZCOOL KuaiLe', 'Noto Sans SC', sans-serif;
+    font-weight: 500;
+}
+.menu-title-english {
+    font-family:'ZCOOL KuaiLe', 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.menu-1-title {
+    text-align: center;
+    font-size: 10rem;
+}
+.menu-1-container {
+    justify-self: center;
+    background-color: #ffffffb1;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 5rem;
+    padding: 5rem 5rem;
+}
+.menu-subtitle-mandarin {
+    font-family: 'Roboto', ;
+}
+.menu-subtitle-english {
+    font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+}
+.menu-1-subtitle {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #000000;
+}
+
+@media (max-width: 591px){
+.menu-image {
+    padding-bottom: 20rem;
+    background-position: left;
+}
+.menu-1-container {
+    justify-self: center;
+    background-color: #ffffffb1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 3rem;
+    padding: 2rem 2rem;
+}
+.menu-1-title {
+    font-size: 4.5rem;
+}
+.menu-1-subtitle {
+    font-size: 2.5rem;
+}
+
+}
+
+@media (min-width: 591px) and (max-width: 990px) {
+    .menu-image {
+        padding-bottom: 10rem;
+        background-position: left;
+    }
+    .menu-1-title {
+        font-size: 5rem;
+    }
+    .menu-1-subtitle {
+        font-size: 2.5rem;
+    }
+}
