@@ -81,40 +81,33 @@ if (page === "menu") {
         home.classList.add("hide");
     }
 }
+const MediaQuery = window.matchMedia("(max-width: 591px)");
+if(MediaQuery.matches) {
+    if (page === "") {
+    
+          console.log("hello1");
+          noneMobileHome.style.display = "inline-flex";
+          noneMobileMenu.style.display = "none";
+          noneMobileAbout.style.display = "none";
+          noneMobileDownload.style.display = "none";
 
-const mediaQuery = window.matchMedia("(max-width: 591px)");
+      }
+      
+      if (page === "menu") {
 
-function handleMediaQueryChange(e) {
-
-if (page === "") {
-  if (e.matches) {
-    noneMobileHome.style.display = "inline-flex";
-    noneMobileMenu.style.display = "none";
-    noneMobileAbout.style.display = "none";
-    noneMobileDownload.style.display = "none";
-  } else {
-    noneMobileHome.style.display = "inline-flex";
-    noneMobileMenu.style.display = "inline-flex";
-    noneMobileAbout.style.display = "inline-flex";
-    noneMobileDownload.style.display = "inline-flex";
-  }
+          noneMobileHome.style.display = "none";
+          noneMobileMenu.style.display = "inline-flex";
+          noneMobileAbout.style.display = "none";
+          noneMobileDownload.style.display = "none";
+        
+      }
+} else {
+        noneMobileHome.style.display = "inline-flex";
+        noneMobileMenu.style.display = "inline-flex";
+        noneMobileAbout.style.display = "inline-flex";
+        noneMobileDownload.style.display = "inline-flex";
 }
 
-if (page === "menu") {
-  if (e.matches) {
-    noneMobileHome.style.display = "none";
-    noneMobileMenu.style.display = "inline-flex";
-    noneMobileAbout.style.display = "none";
-    noneMobileDownload.style.display = "none";
-  } else {
-    noneMobileHome.style.display = "inline-flex";
-    noneMobileMenu.style.display = "inline-flex";
-    noneMobileAbout.style.display = "inline-flex";
-    noneMobileDownload.style.display = "inline-flex";
-  }
-}
 
-}
 
-mediaQuery.addListener('change', handleMediaQueryChange);
-handleMediaQueryChange(mediaQuery.matches);
+
