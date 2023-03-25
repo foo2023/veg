@@ -494,6 +494,12 @@ padding-bottom: 20rem;
     position: static;
     align-self: center;
 }
+.home #noneMobileMenu, .home #noneMobileAbout, .home #noneMobileDownload {
+    display: none;
+}
+.menu #noneMobileHome, .menu #noneMobileAbout, .menu #noneMobileDownload {
+    display: none;
+}
 a.active:hover{
     background: rgb(156, 212, 124);
     color: #ffffff;
