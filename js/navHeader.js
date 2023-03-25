@@ -77,7 +77,7 @@ if (page === "menu") {
     mobileMenu.style.display = "none";
     mobileAbout.style.display = "flex";
     mobileDownload.style.display = "flex";
-    signalNav.classList.add = "menu"
+    signalNav.classList.add("home");
     if (menu.classList.contains("hide")) {
         menu.classList.remove("hide");
         menu.classList.add("active");
