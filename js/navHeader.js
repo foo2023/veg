@@ -43,6 +43,7 @@ window.addEventListener('scroll', () => {
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
+const signalNav = document.getElementById("signalNav")
 const home = document.getElementById("home")
 const menu = document.getElementById("menu")
 console.log(path);
@@ -56,11 +57,13 @@ const noneMobileAbout = document.getElementById("noneMobileAbout")
 const noneMobileDownload = document.getElementById("noneMobileDownload")
 
 
+
 if (page === "") {
     mobileHome.style.display = "none";
     mobileMenu.style.display = "flex";
     mobileAbout.style.display = "flex";
     mobileDownload.style.display = "flex";
+    signalNav.classList.add("home");
 
     if (home.classList.contains("hide")) {
         home.classList.remove("hide");
@@ -74,6 +77,7 @@ if (page === "menu") {
     mobileMenu.style.display = "none";
     mobileAbout.style.display = "flex";
     mobileDownload.style.display = "flex";
+    signalNav.classList.add = "menu"
     if (menu.classList.contains("hide")) {
         menu.classList.remove("hide");
         menu.classList.add("active");
@@ -81,32 +85,32 @@ if (page === "menu") {
         home.classList.add("hide");
     }
 }
-const MediaQuery = window.matchMedia("(max-width: 591px)");
-if(MediaQuery.matches) {
-    if (page === "") {
+// const MediaQuery = window.matchMedia("(max-width: 591px)");
+// if(MediaQuery.matches) {
+//     if (page === "") {
     
-          console.log("hello1");
-          noneMobileHome.style.display = "inline-flex";
-          noneMobileMenu.style.display = "none";
-          noneMobileAbout.style.display = "none";
-          noneMobileDownload.style.display = "none";
+//           console.log("hello1");
+//           noneMobileHome.style.display = "inline-flex";
+//           noneMobileMenu.style.display = "none";
+//           noneMobileAbout.style.display = "none";
+//           noneMobileDownload.style.display = "none";
 
-      }
+//       }
       
-      if (page === "menu") {
+//       if (page === "menu") {
 
-          noneMobileHome.style.display = "none";
-          noneMobileMenu.style.display = "inline-flex";
-          noneMobileAbout.style.display = "none";
-          noneMobileDownload.style.display = "none";
+//           noneMobileHome.style.display = "none";
+//           noneMobileMenu.style.display = "inline-flex";
+//           noneMobileAbout.style.display = "none";
+//           noneMobileDownload.style.display = "none";
         
-      }
-} else {
-        noneMobileHome.style.display = "inline-flex";
-        noneMobileMenu.style.display = "inline-flex";
-        noneMobileAbout.style.display = "inline-flex";
-        noneMobileDownload.style.display = "inline-flex";
-}
+//       }
+// } else {
+//         noneMobileHome.style.display = "inline-flex";
+//         noneMobileMenu.style.display = "inline-flex";
+//         noneMobileAbout.style.display = "inline-flex";
+//         noneMobileDownload.style.display = "inline-flex";
+// }
 
 
 
