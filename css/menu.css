@@ -44,6 +44,45 @@
     text-align: center;
     color: #000000;
 }
+.veg-menu-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minxmax(min(59rem, 100%), 50rem));
+}
+.veg-menu-item {
+    display: grid;
+    grid-auto-columns: minmax(1fr,50rem);
+    padding: 1rem 1rem 1rem 1rem;
+    border: .5rem black solid;
+}
+.veg-menu-item-title {
+    font-size: 5rem;
+}
+.veg-menu-about {
+    display: grid;
+    grid-auto-flow: column;
+}
+.veg-menu-item-picture {
+    background: url("../images/economical.png");
+    background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+width: 30rem;
+height: 20rem;
+}
+.veg-menu-item-right-side {
+    display: grid;
+}
+.veg-menu-item-description {
+    font-size: 3rem;
+}
+.veg-menu-item-button {
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: #d6ffc0;
+}
+.veg-menu-item-button-text {
+    font-size: 3rem;
+}
 
 @media (max-width: 591px){
 .menu-image {
